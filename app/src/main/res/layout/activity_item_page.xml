@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".item_page">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/upd_iv_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516"
+        app:srcCompat="@drawable/back_icon" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="68dp"
+        android:layout_height="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/upd_iv_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532"
+        app:srcCompat="@drawable/like" />
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="75dp"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/upd_iv_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/likefull" />
+
+    <ImageView
+        android:id="@+id/upd_iv_2"
+        android:layout_width="401dp"
+        android:layout_height="334dp"
+        android:layout_marginBottom="24dp"
+        android:adjustViewBounds="true"
+        android:background="#ADD8E6"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/item_Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/item_Name"
+        android:layout_width="190dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="24dp"
+        android:text="Item Name"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/item_Des"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/item_Des"
+        android:layout_width="321dp"
+        android:layout_height="118dp"
+        android:layout_marginBottom="24dp"
+        android:text="Des"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="153dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="40dp"
+        android:text="Date"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/time"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="150dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="40dp"
+        android:text="Time"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

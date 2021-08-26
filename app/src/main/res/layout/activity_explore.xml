@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fffff8"
+    android:layout_height="match_parent"
+    tools:context=".explore">
+
+    <TextView
+        android:id="@+id/head_explore"
+        android:layout_width="242dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:text="Upcoming"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/head2_explore"
+        android:layout_width="174dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:text="Auctions"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/head_explore" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_view"
+        android:layout_width="410dp"
+        android:layout_height="548dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/pro_bottom_nav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/head2_explore"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/pro_bottom_nav"
+        android:layout_width="388dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/edit_border"
+        android:focusable="true"
+        app:itemIconTint="#5D3FD3"
+        app:itemTextColor="#5D3FD3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

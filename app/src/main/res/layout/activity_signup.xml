@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="135dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="15dp"
+        android:text="Welcome to"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/head1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944" />
+
+    <TextView
+        android:id="@+id/head1"
+        android:layout_width="294dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="20dp"
+        android:text="AUCTION PLATFORM"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/signupimg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/signupimg"
+        android:layout_width="411dp"
+        android:layout_height="309dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/signup" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="214dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button"
+        android:text="REGISTER"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="215dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button2"
+        android:text="LOGIN"
+        app:layout_constraintBottom_toTopOf="@+id/fotter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fotter"
+        android:layout_width="241dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="30dp"
+        android:text="Best terms and privacy  policy"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

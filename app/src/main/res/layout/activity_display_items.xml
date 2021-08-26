@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".display_items">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="186dp"
+        android:layout_height="254dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true">
+
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="154dp"
+            android:layout_height="117dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="150dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="140dp"
+            android:text="name of item" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/button"
+            android:text="See more"
+            android:textColor="#ffffff"></Button>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

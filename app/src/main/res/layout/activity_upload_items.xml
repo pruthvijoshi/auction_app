@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".upload_items">
+
+    <ImageView
+        android:id="@+id/upd_iv_1"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:background="#ADD8E6"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/upd_upload_item"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_add_a_photo"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/upd_tf_itemname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/txt_feild"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upd_iv_1"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/upd_et_itemname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Item Name"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/upd_item_des"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_feild"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upd_tf_itemname"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/upd_et_itemdes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Item's description"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/upd_item_minbid"
+        android:layout_width="176dp"
+        android:layout_height="59dp"
+        android:background="@drawable/txt_feild"
+        app:layout_constraintBottom_toTopOf="@+id/button_date"
+        app:layout_constraintEnd_toStartOf="@+id/upd_item_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upd_item_des"
+        tools:ignore="MissingConstraints">>
+
+        <EditText
+            android:id="@+id/upd_et_minbid"
+            android:layout_width="147dp"
+            android:layout_height="35dp"
+            android:hint="Minimum Bid"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/upd_item_date"
+        android:layout_width="176dp"
+        android:layout_height="59dp"
+        android:background="@drawable/txt_feild"
+        app:layout_constraintBottom_toTopOf="@+id/button_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upd_item_des"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/upd_et_maxbid"
+            android:layout_width="147dp"
+            android:layout_height="35dp"
+            android:hint="Maximum Bid"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_date"
+        android:layout_width="75dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ic_date"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/button_time"
+        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_time"
+        android:layout_width="51dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ic_time"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="179dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="24dp"
+        android:text="Date"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="165dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="Time"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="198dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/button"
+        android:text="Save"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
